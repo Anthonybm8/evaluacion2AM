@@ -54,7 +54,7 @@
                         <a class="nav-link" href="{{ route('circuitos.create') }}">➕ Nuevo Circuito</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">📍 Mapa Interactivo</a>
+                        <a class="nav-link" href="">📍 Mapa Interactivo</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">📊 Estadísticas</a>

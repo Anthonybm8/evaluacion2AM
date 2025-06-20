@@ -87,7 +87,7 @@ class CircuitoController extends Controller
             'longitud5' => $request->longitud5
         ]);
 
-        return redirect()->route('circuito.index')->with('mensaje', 'Circuito eliminado correctamente');
+        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito eliminado correctamente');
     }
 
     /**
