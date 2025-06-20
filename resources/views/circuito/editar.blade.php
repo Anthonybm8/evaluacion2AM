@@ -38,7 +38,7 @@
                 &nbsp;&nbsp;&nbsp;
                 <a href="{{ route('circuitos.index') }}" class="btn btn-danger">Cancelar</a>
                 &nbsp;&nbsp;&nbsp;
-                <button type="button" class="btn btn-primary" onclick="graficarCircuito();">Graficar Circuito</button>
+                <button type="button" class="btn btn-primary" onclick="graficarCircuito();">Graficar el Circuito</button>
             </center>
         </form>
     </div>
