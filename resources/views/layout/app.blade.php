@@ -34,21 +34,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('clientes.index') }}">Clientes</a>
+                        <a class="nav-link text-white" href="#">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('clientes.create') }}">Nuevo Registro</a>
+                        <a class="nav-link text-white" href="#">Nuevo Registro</a>
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ url('clientes/mapa') }}">Mapa de clientes</a>
+                        <a class="nav-link text-white" href="#">Mapa de clientes</a>
                         
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ url('predios/create') }}">Registrar predio</a>
+                        <a class="nav-link text-white" href="#">Registrar predio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="{{ route('predios.index') }}">ver predio</a>
+                        <a class="nav-link text-white" href="#">ver predio</a>
                     </li>
                 </ul>
             </div>

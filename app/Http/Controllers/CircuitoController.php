@@ -13,7 +13,7 @@ class CircuitoController extends Controller
     public function index()
     {
         $circuitos = Circuito::all();
-        return view('circuitos.index', compact('circuitos'));
+        return view('circuito.index', compact('circuitos'));
     }
 
     /**
@@ -21,7 +21,7 @@ class CircuitoController extends Controller
      */
     public function create()
     {
-        return view('circuitos.crear');
+        return view('circuito.crear');
     }
 
     /**
@@ -45,7 +45,7 @@ class CircuitoController extends Controller
         ];
         
         Circuito::create($datos);
-        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito creado exitosamente');
+        return redirect()->route('circuito.index')->with('mensaje', 'Circuito creado exitosamente');
     }
 
     /**
@@ -54,7 +54,7 @@ class CircuitoController extends Controller
     public function show(string $id)
     {
         $circuito = Circuito::findOrFail($id);
-        return view('circuitos.mostrar', compact('circuito'));
+        return view('circuito.mostrar', compact('circuito'));
     }
 
     /**
@@ -63,7 +63,7 @@ class CircuitoController extends Controller
     public function edit(string $id)
     {
         $circuito = Circuito::findOrFail($id);
-        return view('circuitos.editar', compact('circuito'));
+        return view('circuito.editar', compact('circuito'));
     }
 
     /**
@@ -87,7 +87,7 @@ class CircuitoController extends Controller
             'longitud5' => $request->longitud5
         ]);
 
-        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito actualizado correctamente');
+        return redirect()->route('circuito.index')->with('mensaje', 'Circuito actualizado correctamente');
     }
 
     /**
@@ -98,6 +98,6 @@ class CircuitoController extends Controller
         $circuito = Circuito::findOrFail($id);
         $circuito->delete();
     
-        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito eliminado correctamente');
+        return redirect()->route('circuito.index')->with('mensaje', 'Circuito eliminado correctamente');
     }
 }
