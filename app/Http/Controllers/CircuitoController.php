@@ -45,7 +45,7 @@ class CircuitoController extends Controller
         ];
         
         Circuito::create($datos);
-        return redirect()->route('circuito.index')->with('mensaje', 'Circuito creado exitosamente');
+        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito creado exitosamente');
     }
 
     /**
@@ -87,7 +87,7 @@ class CircuitoController extends Controller
             'longitud5' => $request->longitud5
         ]);
 
-        return redirect()->route('circuito.index')->with('mensaje', 'Circuito actualizado correctamente');
+        return redirect()->route('circuito.index')->with('mensaje', 'Circuito eliminado correctamente');
     }
 
     /**
@@ -98,6 +98,6 @@ class CircuitoController extends Controller
         $circuito = Circuito::findOrFail($id);
         $circuito->delete();
     
-        return redirect()->route('circuito.index')->with('mensaje', 'Circuito eliminado correctamente');
+        return redirect()->route('circuitos.index')->with('mensaje', 'Circuito eliminado correctamente');
     }
 }
